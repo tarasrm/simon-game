@@ -42,5 +42,7 @@ $(".btn").on("click", function() {
     playSound(userChosenColor);
     animatePress(userChosenColor);
 
-    nextSequence(); // ? needed?
+    setTimeout(function() {
+        nextSequence();
+    }, 1000);
 });
